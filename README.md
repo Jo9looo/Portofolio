@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Studio Satri — Portfolio
 
-## Getting Started
+Portfolio mahasiswa Informatika Universitas Dian Nuswantoro. Menampilkan frontend, UI/UX, game development, dan art.
 
-First, run the development server:
+## Menjalankan di lokal
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Mengisi kontenmu
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Edit file data, bukan halaman:
 
-## Learn More
+- `data/profile.ts` — nama, bio, email, GitHub / LinkedIn / itch.io / ArtStation
+- `data/works.ts` — daftar karya, case study, dan tautan live/repo
+- `data/skills.ts` — empat kolom kemampuan
 
-To learn more about Next.js, take a look at the following resources:
+## Hosting gratis di Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push project ini ke GitHub (repo publik atau privat).
+2. Buka [vercel.com](https://vercel.com) dan login dengan GitHub.
+3. Import repository, biarkan framework terdeteksi sebagai Next.js.
+4. Deploy. Situs live di `namamu.vercel.app` dengan HTTPS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Setiap push ke branch utama akan men-deploy ulang secara otomatis. Domain sendiri bisa dipasang nanti di dashboard Vercel; hosting-nya tetap gratis di paket Hobby.
